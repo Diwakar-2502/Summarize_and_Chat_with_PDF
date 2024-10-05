@@ -1,0 +1,6 @@
+streamlit
+requests
+transformers
+pydantic
+PyPDF2
+fastapi
