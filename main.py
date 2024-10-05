@@ -10,6 +10,8 @@ app = FastAPI()
 class ChatRequest(BaseModel):
     question: str
 
+response = requests.post("https://your-fastapi-service.onrender.com/summarize", files=files)
+
 # Initialize the summarization and QA pipelines
 summarizer = pipeline("summarization")
 qa_pipeline = pipeline("question-answering")
